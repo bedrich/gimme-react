@@ -11,7 +11,6 @@ export default class App extends Component {
     return (
       <div>
         <h1>Fav Beans</h1>
-
         {
           data.map((bean, i) => {
             return <BeanItem bean={bean} key={i} />
