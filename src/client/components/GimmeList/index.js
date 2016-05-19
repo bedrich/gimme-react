@@ -5,7 +5,7 @@ export default class GimmeList extends Component {
     render() {
         var gimmeNodes = this.props.data.map((gimme) => {
             return (
-                <Gimme id={gimme.id} src={gimme.source} title={gimme.title} />
+                <Gimme key={gimme.id} src={gimme.source} title={gimme.title} />
             );
         });
 
