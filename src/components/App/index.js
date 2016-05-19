@@ -5,12 +5,11 @@ import GimmeList from '../GimmeList';
 export default class App extends React.Component {
     constructor() {
         super();
+        this.loadGimmesFromServer = this.loadGimmesFromServer.bind(this);
         this.state = {gimmes: []};
     }
 
-    // Autobinding
-    // `= () =>` instead of `.bind(this)` in the `constructor`
-    loadGimmesFromServer = () => {
+    loadGimmesFromServer() {
         // TODO: Fetch gimmes from the server
         this.setState({gimmes: gimmes});
     }
