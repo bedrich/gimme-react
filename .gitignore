@@ -6,3 +6,6 @@ dist
 # Python
 *.pyc
 venv
+
+# libSass
+css
