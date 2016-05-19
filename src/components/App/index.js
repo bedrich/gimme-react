@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {data as gimmes} from './data';
+import GimmeList from '../GimmeList';
 
 export default class App extends React.Component {
     constructor() {
@@ -22,6 +23,7 @@ export default class App extends React.Component {
         return (
             <div className="app">
                 <h1>IRL</h1>
+                <GimmeList data={this.state.gimmes} />
             </div>
         );
     }
