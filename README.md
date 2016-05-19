@@ -1,15 +1,15 @@
 ## Running the server
 
 ```
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt
+[first-time] virtualenv venv
+[first-time] source venv/bin/activate
+[first-time] pip install -r requirements.txt
 python server.py
 ```
 
 ## Running webpack
 
 ```
-npm install
+[first-time] npm install
 ./node_modules/.bin/webpack -w -p
 ```
