@@ -21,7 +21,6 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="app">
-                <h1>IRL</h1>
                 <GimmeList data={this.state.gimmes} />
             </div>
         );

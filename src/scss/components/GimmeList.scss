@@ -1,0 +1,13 @@
+.gimme-list {
+    display: block;
+}
+
+.gimme-list::before,
+.gimme-list::after {
+    content: ' ';
+    display: table;
+}
+
+.gimme-list::after {
+    clear: both;
+}
